@@ -7,8 +7,8 @@ PYTHON_COMPAT=( python2_7 )
 
 inherit git-r3 python-r1 distutils-r1
 
-DESCRIPTION="The VOMS native service and APIs"
-HOMEPAGE="https://italiangrid.github.io/rucio"
+DESCRIPTION="Rucio is the new version of ATLAS DDM system services."
+HOMEPAGE="http://rucio.cern.ch/"
 EGIT_REPO_URI="https://gitlab.cern.ch/rucio01/rucio.git"
 EGIT_COMMIT="${PV}"
 
