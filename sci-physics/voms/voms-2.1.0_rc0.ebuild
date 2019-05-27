@@ -1,11 +1,11 @@
 # Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="6"
+EAPI="7"
 
-inherit autotools versionator
+inherit autotools
 
-MY_PV=$(replace_version_separator 3 '-')
+MY_PV=$(ver_rs 3 '-')
 
 DESCRIPTION="The VOMS native service and APIs"
 HOMEPAGE="https://italiangrid.github.io/${PN}"
