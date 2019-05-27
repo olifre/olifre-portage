@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="6"
@@ -16,7 +16,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="doc +clients server"
 
-DEPEND=">=dev-libs/openssl-1.0.1"
+DEPEND=">=dev-libs/openssl-1.0.1:0"
 RDEPEND="${DEPEND}
 	>=net-libs/gsoap-2.8.50
 	sci-physics/egi-igtf
