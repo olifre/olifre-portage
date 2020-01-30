@@ -113,4 +113,3 @@ src_install() {
 	insinto "/etc/grid-security/certificates"
 	doins ca_*/*
 }
-
