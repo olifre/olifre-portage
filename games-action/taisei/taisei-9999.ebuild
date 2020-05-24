@@ -5,6 +5,7 @@ EAPI=7
 
 if [[ ${PV} == *9999* ]]; then
 	inherit git-r3
+	KEYWORDS=""
 	EGIT_REPO_URI="https://github.com/taisei-project/taisei.git"
 else
 	SRC_URI="https://github.com/taisei-project/${PN}/releases/download/v${PV}/${PN}-v${PV}.tar.xz"
@@ -20,8 +21,6 @@ HOMEPAGE="https://taisei-project.org/"
 LICENSE="MIT CC-BY-4.0 CC0-1.0 public-domain"
 SLOT="0"
 IUSE="doc"
-
-KEYWORDS="~amd64 ~x86"
 
 RDEPEND="
 	>=media-libs/libsdl2-2.0.6
