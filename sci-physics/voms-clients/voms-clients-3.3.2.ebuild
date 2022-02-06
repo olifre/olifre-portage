@@ -542,7 +542,7 @@ src_install() {
 	java-pkg_newjar "${T}"/m2/org/bouncycastle/bcpkix-jdk15on/1.58/bcpkix-jdk15on-1.58.jar bcpkix.jar
 	java-pkg_newjar "${T}"/m2/org/bouncycastle/bcprov-jdk15on/1.58/bcprov-jdk15on-1.58.jar bcprov.jar
 	for tool in init info destroy; do
-	        java-pkg_dolauncher voms-proxy-${tool}3 --main org.italiangrid.voms.clients.VomsProxy${tool^} --java_args="-XX:+UseSerialGC -Xmx16m"
+		java-pkg_dolauncher voms-proxy-${tool}3 --main org.italiangrid.voms.clients.VomsProxy${tool^} --java_args="-XX:+UseSerialGC -Xmx16m"
 		#sed -i	-e "s/voms-proxy-${tool}/voms-proxy-${tool}3/g" \
 		#	-e "s/VOMS-PROXY-${tool^^}/VOMS-PROXY-${tool^^}3/g" man/voms-proxy-${tool}.1 \
 		#	man/voms-proxy-${tool}.1
