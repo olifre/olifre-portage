@@ -11,6 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: Install Python3 requests for --net support.
+      run: |
+        sudo apt-get -y install python3-requests
     - name: Run pkgcheck
       uses: pkgcore/pkgcheck-action@v1
       with:
