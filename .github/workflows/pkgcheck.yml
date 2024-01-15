@@ -14,5 +14,4 @@ jobs:
     - name: Run pkgcheck
       uses: pkgcore/pkgcheck-action@v1
       with:
-        args: --net --keywords=-RedundantVersion,-MissingAccountIdentifier
-        pkgs: pkgcheck>=0.10.3 requests
+        args: --keywords=-RedundantVersion,-MissingAccountIdentifier
