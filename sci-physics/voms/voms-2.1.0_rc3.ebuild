@@ -10,6 +10,7 @@ MY_PV=$(ver_rs 3 '-')
 DESCRIPTION="The VOMS native service and APIs"
 HOMEPAGE="https://italiangrid.github.io/voms/"
 SRC_URI="https://github.com/italiangrid/${PN}/archive/v${MY_PV}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${PN}-${MY_PV}"
 
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -21,8 +22,6 @@ RDEPEND="${DEPEND}
 	>=net-libs/gsoap-2.8.50
 	sci-physics/egi-igtf
 	sci-physics/wlcg-voms"
-
-S="${WORKDIR}/${PN}-${MY_PV}"
 
 src_prepare() {
 	default
