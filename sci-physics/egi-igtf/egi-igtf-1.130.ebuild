@@ -15,12 +15,11 @@ SRC_URI="https://repository.egi.eu/sw/production/cas/1/ca-policy-egi-cam-${MY_PV
 	https://repository.egi.eu/sw/production/cas/1/ca-policy-egi-cam-${MY_PV}/tgz/igtf-preinstalled-bundle-iota.tar.gz -> igtf-preinstalled-bundle-iota-${MY_PV}.tar.gz
 	https://repository.egi.eu/sw/production/cas/1/ca-policy-egi-cam-${MY_PV}/tgz/igtf-preinstalled-bundle-mics.tar.gz -> igtf-preinstalled-bundle-mics-${MY_PV}.tar.gz
 	https://repository.egi.eu/sw/production/cas/1/ca-policy-egi-cam-${MY_PV}/tgz/igtf-preinstalled-bundle-slcs.tar.gz -> igtf-preinstalled-bundle-slcs-${MY_PV}.tar.gz"
+S="${WORKDIR}/"
 
 LICENSE="CC-BY-3.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-
-S="${WORKDIR}/"
 
 src_install() {
 	insinto "/etc/grid-security/certificates"
