@@ -11,6 +11,8 @@
     <flag name="belle">Install VOMS configuration for VO BELLE</flag>
     <flag name="cms">Install VOMS configuration for VO CMS</flag>
     <flag name="dteam">Install VOMS configuration for VO DTEAM</flag>
+    <flag name="dune">Install VOMS configuration for VO DUNE</flag>
+    <flag name="ilc">Install VOMS configuration for VO ILC</flag>
     <flag name="lhcb">Install VOMS configuration for VO LHCb</flag>
     <flag name="ops">Install VOMS configuration for VO OPS</flag>
     <flag name="wlcg">Install VOMS configuration for VO WLCG</flag>
