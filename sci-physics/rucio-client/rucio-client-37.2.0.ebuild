@@ -51,6 +51,9 @@ python_prepare_all() {
 
 python_install() {
 	distutils-r1_python_install
+}
+
+python_install_all() {
 	mkdir -p "$D"/etc/ || die
 	mv "$D"/usr/etc "$D"/etc/rucio || die
 	rm "$D"/usr/requirements.client.txt || die
